@@ -56,7 +56,6 @@ let hooks = {
 	 */
 	vnode({ attributes }) {
 		if (!attributes) return;
-
 		let s = attributes.style;
 		if (s && !s.substring) {
 			attributes.style = styleObjToCss(s);
