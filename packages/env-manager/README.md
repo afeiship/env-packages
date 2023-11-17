@@ -17,7 +17,7 @@ import EnvManager from '@jswork/env-manager';
 
 // vite
 const viteEnv = new EnvManager({
-  prefix: 'VITE_APP_',
+  prefix: 'VITE_',
   env: import.meta.env
 });
 
