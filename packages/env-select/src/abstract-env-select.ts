@@ -23,6 +23,6 @@ export default class AbstractEnvSelect {
       ...this.ENVS[env],
     };
 
-    return nx.get(res, inKey, res);
+    return nx.get(res, inKey!, res);
   }
 }
