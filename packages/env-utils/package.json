@@ -1,6 +1,6 @@
 {
   "name": "@jswork/env-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Env utils.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -24,6 +24,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "homepage": "https://js.work",
-  "dependencies": {}
+  "homepage": "https://js.work"
 }
