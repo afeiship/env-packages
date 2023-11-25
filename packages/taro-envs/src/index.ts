@@ -14,6 +14,8 @@ class TaroEnvs {
   }
 }
 
+nx.set(nx, '$env', TaroEnvs.get);
+
 // for commonjs es5 require
 if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
   module.exports = TaroEnvs;
