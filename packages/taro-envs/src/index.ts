@@ -1,20 +1,18 @@
-import nx from '@jswork/next';
-import '@jswork/next-json';
+import EnvManager from '@jswork/env-manager';
 
 declare var wx: any;
 
-const PREFIX = 'TARO_APP_';
+const taroEnv = new EnvManager({
+  prefix: 'TARO_APP_',
+  env: process.env,
+  harmony: true,
+});
 
 class TaroEnvs {
-  public static get(inKey: string): any {
-    const key = inKey.toUpperCase();
-    const hasPrefix = key.startsWith(PREFIX);
-    const result = hasPrefix ? process.env[key] : process.env[`${PREFIX}${key}`];
-    return nx.parse(result!);
+  public static get(inKey?: string): any {
+    return taroEnv.get(inKey);
   }
 }
-
-nx.set(nx, '$env', TaroEnvs.get);
 
 // for commonjs es5 require
 if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
