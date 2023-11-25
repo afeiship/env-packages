@@ -13,9 +13,9 @@ npm install @jswork/env-utils
 
 ## usage
 ```js
-import envUtils from '@jswork/env-utils';
+import { prefixedEnv } from '@jswork/env-utils';
 
-// usage goes here.
+const envs = prefixedEnv('REACT_APP_', process.env);
 ```
 
 ## types
