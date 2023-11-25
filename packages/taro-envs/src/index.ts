@@ -1,3 +1,6 @@
+import nx from '@jswork/next';
+import '@jswork/next-json';
+
 declare var wx: any;
 
 const PREFIX = 'TARO_APP_';
@@ -6,7 +9,8 @@ class TaroEnvs {
   public static get(inKey: string): any {
     const key = inKey.toUpperCase();
     const hasPrefix = key.startsWith(PREFIX);
-    return hasPrefix ? process.env[key] : process.env[`${PREFIX}${key}`];
+    const result = hasPrefix ? process.env[key] : process.env[`${PREFIX}${key}`];
+    return nx.parse(result!);
   }
 }
 

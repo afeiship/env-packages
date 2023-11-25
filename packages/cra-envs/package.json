@@ -46,9 +46,6 @@
     "type": "git",
     "url": "https://github.com/afeiship/cra-envs.git"
   },
-  "dependencies": {
-    "@jswork/next": "^1.0.9"
-  },
   "keywords": [
     "cra",
     "env-cmd",
