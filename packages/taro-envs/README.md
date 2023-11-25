@@ -13,7 +13,9 @@ npm install @jswork/taro-envs
 
 ## usage
 ```js
-import ViteEnvs from '@jswork/taro-envs';
+import TaroEnvs from '@jswork/taro-envs';
+
+// todo: 实际使用发现 process.env 各种取不到值，所以暂时不考虑 taro 框架
 ```
 
 ## license
