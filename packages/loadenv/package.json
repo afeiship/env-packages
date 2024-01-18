@@ -1,6 +1,6 @@
 {
   "name": "@jswork/loadenv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load dot env.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
