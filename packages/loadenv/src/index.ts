@@ -18,7 +18,6 @@ const loadenv = (inOptions: ILoadenvOptions) => {
 
   for (let i = 0; i < envfiles.length; i++) {
     const envFile = path.resolve(process.cwd(), cwd, envfiles[i]);
-    console.log(envFile);
     const envs = dotenv.config({ path: envFile }).parsed;
     parsed.push(envs);
   }
