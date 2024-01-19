@@ -3,7 +3,7 @@ import EnvManager from '@jswork/env-manager';
 declare var wx: any;
 
 const taroEnv = new EnvManager({
-  prefix: 'TARO_APP_',
+  prefix: 'TARO_',
   env: process.env,
   harmony: true,
 });
