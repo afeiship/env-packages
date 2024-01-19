@@ -1,6 +1,6 @@
 {
   "name": "@jswork/taro-envs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Taro env manager.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
