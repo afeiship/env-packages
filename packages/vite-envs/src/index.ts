@@ -10,6 +10,10 @@ const viteEnv = new EnvManager({
 });
 
 class ViteEnvs {
+  public static setOptions(inOptions: any): void {
+    viteEnv.setOptions(inOptions);
+  }
+
   public static get(inKey?: string): any {
     return viteEnv.get(inKey);
   }

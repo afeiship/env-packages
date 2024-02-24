@@ -26,6 +26,10 @@ class EnvManager {
     this.init();
   }
 
+  public setOptions(inOptions: EnvManagerOptions) {
+    nx.mix(this.options, inOptions);
+  }
+
   public init() {
     const { harmony } = this.options;
     if (harmony) nx.set(nx, '$env', this.get.bind(this));
