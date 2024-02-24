@@ -1,6 +1,6 @@
 {
   "name": "@jswork/vue-envs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vue cli env manager.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -53,7 +53,7 @@
     ]
   },
   "dependencies": {
-    "@jswork/env-manager": "^1.0.13"
+    "@jswork/env-manager": "^1.0.14"
   },
   "keywords": [
     "cli",

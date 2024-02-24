@@ -1,6 +1,6 @@
 {
   "name": "@jswork/vite-envs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Vite env manager.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -54,7 +54,7 @@
     ]
   },
   "dependencies": {
-    "@jswork/env-manager": "^1.0.13"
+    "@jswork/env-manager": "^1.0.14"
   },
   "keywords": [
     "env",
