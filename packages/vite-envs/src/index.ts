@@ -9,7 +9,9 @@ const viteEnv = new EnvManager({
 
 class ViteEnvs {
   public static setOptions(inOptions: any): void {
-    viteEnv.setOptions(inOptions);
+    let env = inOptions.env;
+    env = typeof env === 'string' ? JSON.parse(env) : env;
+    viteEnv.setOptions({ ...inOptions, env });
   }
 
   public static get(inKey?: string): any {
