@@ -4,7 +4,8 @@ declare var wx: any;
 
 const viteEnv = new EnvManager({
   prefix: 'VITE_',
-  env: process.env,
+  // @ts-ignore
+  env: import.meta?.env,
   harmony: true,
 });
 
